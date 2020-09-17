@@ -1525,7 +1525,7 @@
     "@syncfusion/ej2-buttons" "18.2.58"
     "@syncfusion/ej2-data" "18.2.54"
 
-"@syncfusion/ej2-navigations@~18.2.57":
+"@syncfusion/ej2-navigations@18.2.58", "@syncfusion/ej2-navigations@~18.2.57":
   version "18.2.58"
   resolved "https://registry.yarnpkg.com/@syncfusion/ej2-navigations/-/ej2-navigations-18.2.58.tgz#d33716cf3ad8eb93f673f548071ce4e705f5aa1b"
   integrity sha512-8YUkdPToOk0wQnJ/pqmOGd1Wl4KqK7dvByPNhoW/lms4gJqDdPwl/7w9jBikmKdQq9Vu38z3n9reSR9LHQuPIw==
@@ -1566,6 +1566,15 @@
   dependencies:
     "@syncfusion/ej2-base" "~18.2.57"
     "@syncfusion/ej2-grids" "18.2.58"
+    "@syncfusion/ej2-react-base" "~18.2.55"
+
+"@syncfusion/ej2-react-navigations@^18.2.58":
+  version "18.2.58"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-react-navigations/-/ej2-react-navigations-18.2.58.tgz#f6019cf1ee18cad360d3b6a02f958df860cf2d6e"
+  integrity sha512-sREehiC1cPvy6Dv74tSsKnPEd5ghR9Nsa73TnFpnouWKZBES3chWo6sMUYUWpMJfN2LECRZ0LJdrUPyaYcAuyQ==
+  dependencies:
+    "@syncfusion/ej2-base" "~18.2.57"
+    "@syncfusion/ej2-navigations" "18.2.58"
     "@syncfusion/ej2-react-base" "~18.2.55"
 
 "@syncfusion/ej2-react-schedule@^18.2.57":

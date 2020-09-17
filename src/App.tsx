@@ -1,20 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
-// import { G } from '@syncfusion/ej2-react-grids';
 import './App.css';
-import Scheduler from './Scheduler';
-import Grid from './Grid';
+import Scheduler from './components/Scheduler';
+import Grid from './components/Grid';
+import SideNav from './components/SideNav';
 
 function App() {
   return (
-    <div className='container'>
-      <div>
-        <Scheduler />
+    <SideNav>
+      <div className='container'>
+        <div>
+          <Scheduler />
+        </div>
       </div>
-      <div>
-        <Grid />
-      </div>
-    </div>
+    </SideNav>
   );
 }
 
