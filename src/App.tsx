@@ -4,16 +4,18 @@ import './App.css';
 import Scheduler from './components/Scheduler';
 import Grid from './components/Grid';
 import SideNav from './components/SideNav';
+import Layout from './components/layout/Layout';
 
 function App() {
   return (
-    <SideNav>
-      <div className='container'>
-        <div>
-          <Scheduler />
-        </div>
-      </div>
-    </SideNav>
+    <Layout />
+    // <SideNav>
+    //   <div className='container'>
+    //     <div>
+    //       <Scheduler />
+    //     </div>
+    //   </div>
+    // </SideNav>
   );
 }
 
