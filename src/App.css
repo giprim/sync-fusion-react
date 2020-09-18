@@ -5,3 +5,42 @@
   display: grid;
   grid-gap: 20px;
 } */
+
+#header-section.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #fff;
+}
+
+.global-search {
+  padding: 5px 15px;
+  background: #d9d9d9;
+  border-radius: 30px;
+  border: none;
+  width: 250px;
+}
+
+.header-left {
+  width: 290px;
+  background: #00794a;
+  color: white;
+  /* padding: 10px 20px; */
+}
+
+.header-right {
+  flex-grow: 1;
+  color: white;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-right span {
+  padding: 10px 18px;
+  margin-right: 5px;
+  background: #d9d9d9;
+  border-radius: 20px;
+}

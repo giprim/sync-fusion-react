@@ -19,22 +19,6 @@ code {
   min-height: 55px;
   max-height: 55px;
   background: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.header-left {
-  width: 290px;
-  background: #00794a;
-  color: white;
-  /* padding: 10px 20px; */
-}
-
-.header-right {
-  flex-grow: 1;
-  color: white;
-  padding-left: 20px;
 }
 
 #header-section .header-style {

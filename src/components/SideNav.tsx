@@ -96,18 +96,22 @@ const SideNav = (props: any) => {
       <div>
         <div className='main-header' id='header-section'>
           <div className='header-left'>
-            <ul className='header-list'>
-              <li
-                className='float-left header-style icon-menu'
-                id='hamburger'
-                onClick={toggleClick}></li>
-              <li className='float-left header-style nav-pane'>
-                <b>NIRSAL MFB</b>
-              </li>
-            </ul>
+            {/* <ul className='header-list'> */}
+            <span
+              className='float-left header-style icon-menu'
+              id='hamburger'
+              onClick={toggleClick}></span>
+            <a className='float-left header-style nav-pane text-light' href='/'>
+              <b>NIRSAL MFB</b>
+            </a>
+            {/* </ul> */}
           </div>
           <div className='header-right'>
-            <input placeholder='search' type='text' />
+            <input type='text' placeholder='search' className='global-search' />
+            <div className='text-dark'>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
         <SidebarComponent
@@ -117,14 +121,6 @@ const SideNav = (props: any) => {
           target={target}
           mediaQuery={mediaQuery}>
           <div className='main-menu'>
-            <div className='table-content'>
-              <input
-                type='text'
-                placeholder='Search...'
-                className='search-icon '
-              />
-              <p className='main-menu-header'>TABLE OF CONTENTS</p>
-            </div>
             <div>
               <TreeViewComponent
                 id='main-treeview'
