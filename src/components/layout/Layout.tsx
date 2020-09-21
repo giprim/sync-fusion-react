@@ -5,6 +5,10 @@ const Layout = () => {
   useEffect(() => {
     window.innerWidth <= 768 ? setToggle(false) : setToggle(true);
   }, []);
+
+  window.addEventListener('resize', () => {
+    window.innerWidth <= 768 ? setToggle(false) : setToggle(true);
+  });
   const toggleSideNav = () => {
     setToggle(!toggle);
   };
