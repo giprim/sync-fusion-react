@@ -5,17 +5,91 @@
 
 .sideNav {
   grid-area: side;
-  background: rgb(175, 175, 175);
+  background: rgb(255, 255, 255);
+  padding-top: 20px;
+  display: block;
 }
 
 .content {
   grid-area: main;
-  background: rgb(243, 243, 243);
+  background: rgb(208, 208, 208);
+  padding: 15px;
+  width: 100%;
 }
 
 .topNav {
   grid-area: top;
-  background: rgb(154, 248, 123);
+  background: rgb(255, 255, 255);
+  display: flex;
+}
+
+.inside {
+  background: rgb(255, 255, 255);
+  height: 100px;
+}
+
+.menu {
+  border: none;
+  background: #ffffff00;
+  border-radius: 5px;
+  padding: 5px 8px;
+  color: #fff;
+}
+
+.logo {
+  background: #00794a;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.logo a {
+  color: white;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.notifications {
+  padding: 5px 15px;
+  flex-grow: 1;
+  display: none;
+  align-items: center;
+  background: #fff;
+  justify-content: space-between;
+}
+
+.notifications .search {
+  border: none;
+  border-radius: 25px;
+  background: #eee;
+  padding: 2px 15px;
+  color: #666666;
+  align-self: center;
+  margin: 0;
+}
+
+.notifications span,
+.notifications_logo span {
+  height: 40px;
+  width: 40px;
+  padding: 5px 8px;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.notifications span:hover {
+  background: #eee;
+}
+
+.notifications_logo span {
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -26,7 +100,20 @@
       [main-left] 'side main main main' 1fr [main-right]
       [main-left] 'side main main main' 1fr [main-right] / 290px 1fr;
   }
+
+  .logo {
+    width: 290px;
+  }
+
+  .notifications {
+    display: flex;
+  }
+
+  .notifications_logo {
+    display: none;
+  }
 }
+
 .hideSideNav {
   grid-template:
     [topNav-left] 'top top top top' 50px [topNav-right]
@@ -36,9 +123,14 @@
 }
 
 .showSideNav {
+  z-index: 200;
   grid-template:
     [topNav-left] 'top top top top' 50px [topNav-right]
     [main-left] 'side main main main' 1fr [main-right]
     [main-left] 'side main main main' 1fr [main-right]
     [main-left] 'side main main main' 1fr [main-right] / 290px 1fr;
+}
+
+.hide {
+  display: none;
 }

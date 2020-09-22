@@ -1,0 +1,25 @@
+.navItem {
+  display: flex;
+  padding: 10px 15px;
+  /* background: white; */
+  text-decoration: none;
+  color: #333333;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItem:hover {
+  text-decoration: none;
+}
+
+.icon {
+  padding: 8px;
+  min-width: 5px;
+  min-height: 5px;
+  margin: 0 3px;
+}
+
+.navBox {
+  padding-left: 20px;
+  background: #f2f2f2;
+}
